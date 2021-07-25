@@ -34,3 +34,17 @@ summary(lassoFit)
 
 # Lambda in realtion with the coefficients
 plot(lassoFit, xvar = 'lambda', label=T)
+
+#Goodness of fit
+plot(lassoFit, xvar = 'dev', label = T)
+
+# Predicted Values
+y_predicted_lasso <- predict(lassoFit, s=min(lambda.array), newx = xtest)
+
+# SSE(sum of squared error), SST (sum of squared total)
+sst <- sum((ytest - mean(ytest))^2)
+sse <- sum((y_predicted_lasso - ytest)^2)
+
+#rsquare_lasso is the variance of our model
+rsquare_lasso <- 1 - (sse/sst)
+
