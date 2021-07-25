@@ -11,7 +11,7 @@ Tuttavia, la regolarizzazione è un metodo efficace che migliora la precisione d
 Inoltre, questa tecnica evita anche la perdita di dati importanti, che avviene con underfitting. 
 La regolarizzazione aiuta il modello ad apprendere applicando esempi appresi in precedenza ai nuovi dati non visti. Si può anche ridurre la capacità del modello guidando vari parametri a zero. Questo preocesso rimuoverà i pesi aggiuntivi dalle caratteristiche specifiche e distribuirà tali pesi in modo uniforme.
 
-*Concretamente*: </br> Quando vogliamo che il modello funzioni correttamente, definiamo la funzione di perdita. 
+*Concretamente*: </br> Quando vogliamo che il modello funzioni correttamente, definiamo la funzione di perdita, **loss function**. 
 Questa funzione di perdita definirà le prestazioni del modello in base ai dati del calcolo delle perdite. 
 L'obiettivo è ridurre al minimo la perdita per trovare il modello che vogliamo. Per questo motivo, la regolarizzazione aggiunge lambda 
 per penalizzare la funzione di perdita. 
