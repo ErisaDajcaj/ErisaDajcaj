@@ -19,5 +19,5 @@ Si riesce ad ottenere la soluzione ottimale da questa tecnica in quanto rifiuta 
 All’aumentare di λ, aumenta il bias. Man mano che λ diminuisce, la varianza aumenta.
 
 **LASSO**
-</br> La regressione Lasso aiuta a ridurre la varianza in modo significativo con un piccolo aumento della distorsione e generare una migliore accuratezza della previsione.
+</br> La tecnica di regolarizzazione Lasso aiuta a ridurre la varianza in modo significativo con un piccolo aumento della distorsione e generare una migliore accuratezza della previsione.
 Esegue la selezione variabile riducendo le stime dei coefficienti verso 0. Lasso forza alcune delle stime dei coefficienti ad essere esattamente 0, cioè quando il valore di λ è estremamente grande, l'ampiezza di alcune stime dei coefficienti è uguale a 0 rendendo il modello più facile da interpretare.
